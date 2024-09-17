@@ -38,6 +38,15 @@
             color: #FF6347;
         }
     </style>
+
+    <script type="text/javascript">
+        // 简单的密码保护功能
+        var password = prompt("Please enter the password:");
+        if (password !== "142857") {
+            alert("Incorrect password");
+            window.location.href = "about:blank";  // 重定向到一个空白页
+        }
+    </script>
 </head>
 <body>
 
@@ -53,7 +62,6 @@
                 <li><a href="ppt/syllabus.pdf" target="_blank">IGCSE Syllabus</a></li>
                 <li><a href="ppt/1.1 Lesson - Binary systems" target="_blank">1.1 Lesson - Binary systems</a></li>
                 <li><a href="ppt/1.2 Text, Sound and Images" target="_blank">1.2 Text, Sound and Images</a></li>
-                <!-- 添加更多PPT文件 -->
             </ul>
         </div>
 
@@ -62,7 +70,6 @@
             <h2>Videos</h2>
             <ul>
                 <li><a href="https://space.bilibili.com/3461563052723045/video?tid=0&pn=2&keyword=&order=pubdate" target="_blank">Bilibili link</a></li>
-                <!-- 添加更多视频文件 -->
             </ul>
         </div>
 
@@ -72,7 +79,6 @@
             <ul>
                 <li><a href="words/Vocabulary 1" target="_blank">Vocabulary 1</a></li>
                 <li><a href="words/Vocabulary 3" target="_blank">Vocabulary 3</a></li>
-                <!-- 添加更多Word文件 -->
             </ul>
         </div>
     </div>
