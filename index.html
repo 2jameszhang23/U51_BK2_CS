@@ -4,26 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U51_BK2_CS Course Materials</title>
-    <script type="text/javascript">
-        // Prompt user for password
-        var password = prompt("Please enter the password:");
-
-        // Check if the password is correct
-        if (password !== "142857") {
-            alert("Incorrect password");
-            window.location.href = "about:blank";  // Redirect to a blank page if the password is wrong
+    <style>
+        /* 布局：三栏 */
+        .container {
+            display: flex;
+            justify-content: space-between;
         }
-    </script>
+
+        /* 每一栏的样式 */
+        .column {
+            width: 30%; /* 每一栏占宽度的30% */
+            padding: 20px;
+            background-color: #f2f2f2;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* 栏目的标题样式 */
+        h2 {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* 链接样式 */
+        a {
+            text-decoration: none;
+            color: #0000EE;
+        }
+        a:hover {
+            color: #FF6347;
+        }
+    </style>
 </head>
 <body>
+
     <h1>U51_BK2_CS Course Materials</h1>
-    <p>Below are the links to download the course PPTs for each session:</p>
-    <ul>
-        <li><a href="ppt/data_storage.pdf" target="_blank">Session 1: Data Storage</a></li>
-        <li><a href="ppt/hexa.pdf" target="_blank">Session 2: Hexadecimal</a></li>
-        <li><a href="ppt/syllabus.pdf" target="_blank">IGCSE Syllabus</a></li>
-        <!-- Add more sessions as needed -->
-    </ul>
+
+    <div class="container">
+        <!-- 第一栏：PPT -->
+        <div class="column">
+            <h2>PPT</h2>
+            <ul>
+                <li><a href="ppt/data_storage.pdf" target="_blank">Session 1: Data Storage</a></li>
+                <li><a href="ppt/hexa.pdf" target="_blank">Session 2: Hexadecimal</a></li>
+                <li><a href="ppt/syllabus.pdf" target="_blank">IGCSE Syllabus</a></li>
+                <li><a href="ppt/1.1 Lesson - Binary systems" target="_blank">1.1 Lesson - Binary systems</a></li>
+                <li><a href="ppt/1.2 Text, Sound and Images" target="_blank">1.2 Text, Sound and Images</a></li>
+                <!-- 添加更多PPT文件 -->
+            </ul>
+        </div>
+
+        <!-- 第二栏：视频 -->
+        <div class="column">
+            <h2>Videos</h2>
+            <ul>
+                <li><a href="https://space.bilibili.com/3461563052723045/video?tid=0&pn=2&keyword=&order=pubdate" target="_blank">Bilibili link</a></li>
+                <li><a href="videos/Video - 1.1 Binary Data.mp4" target="_blank">1.1 Binary Data</a></li>
+                <li><a href="videos/Video - 1.1 How computers work - Binary and Data.mp4" target="_blank">1.1 How computers work - Binary and Data</a></li>
+                <li><a href="videos/Video - 1.2 Pixels and rgb" target="_blank">1.2 Pixels and rgb</a></li>
+                <li><a href="videos/Video - 1.3 Compression" target="_blank">1.3 Compression</a></li>
+                <!-- 添加更多视频文件 -->
+            </ul>
+        </div>
+
+        <!-- 第三栏：Word文档 -->
+        <div class="column">
+            <h2>Word Documents</h2>
+            <ul>
+                <li><a href="words/Vocabulary 1" target="_blank">Vocabulary 1</a></li>
+                <li><a href="words/Vocabulary 3" target="_blank">Vocabulary 3</a></li>
+                <!-- 添加更多Word文件 -->
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
-
