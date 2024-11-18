@@ -5,116 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U51_BK2_CS Course Materials</title>
     <style>
-        /* 添加渐变背景，增强科幻感 */
         body {
-            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
-            color: #00FFCC;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
+            background: #f9f9f9;
+            color: #333;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
-        /* 三栏布局，添加了响应式设计 */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        /* 栏样式，带霓虹灯效果的背景 */
-        .column {
-            width: 30%;
-            min-width: 250px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-            margin: 10px;
-            transition: transform 0.5s, box-shadow 0.5s;
-        }
-
-        /* 悬浮动画，增加放大和发光效果 */
-        .column:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 255, 255, 1);
-        }
-
-        /* 标题样式，带霓虹灯效果 */
-        h2 {
-            text-align: center;
-            background-color: #00FFFF;
-            color: #000;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 20px #00FFFF, 0 0 20px #00FFFF inset;
-        }
-
-        /* 链接样式 */
-        a {
-            text-decoration: none;
-            color: #00FFCC;
-            font-size: 1.1rem;
-            transition: color 0.3s, text-shadow 0.3s;
-        }
-
-        /* 悬浮时的霓虹灯效果 */
-        a:hover {
-            color: #FF6347;
-            text-shadow: 0 0 5px #FF6347, 0 0 10px #FF6347;
-        }
-
-        /* 主标题带霓虹灯效果 */
         h1 {
-            font-size: 3rem;
-            color: #00FFFF;
-            text-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF;
-            animation: glow 1.5s infinite alternate;
+            text-align: center;
+            font-size: 2.5rem;
+            color: #555;
+            margin: 20px 0;
         }
 
-        /* 主标题霓虹灯动画 */
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
-            }
-            to {
-                text-shadow: 0 0 30px #00FFFF, 0 0 40px #00FFFF;
-            }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        /* 元素的进入动画 */
         .column {
-            opacity: 0;
-            animation: fadeIn 1.5s forwards;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .column:nth-child(1) { animation-delay: 0.5s; }
-        .column:nth-child(2) { animation-delay: 1s; }
-        .column:nth-child(3) { animation-delay: 1.5s; }
+        h2 {
+            font-size: 1.5rem;
+            color: #444;
+            text-align: center;
+            margin-bottom: 15px;
+        }
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #0066cc;
+            transition: color 0.2s ease;
+        }
+
+        ul li a:hover {
+            color: #004999;
+        }
+
+        .column-small {
+            font-size: 0.9rem;
         }
     </style>
-
-    <script type="text/javascript">
-        // 简单的密码保护功能
-        var password = prompt("Please enter the password:");
-        if (password !== "142857") {
-            alert("Incorrect password");
-            window.location.href = "about:blank";  // 重定向到一个空白页
-        }
-    </script>
 </head>
 <body>
 
     <h1>U51_BK2_CS Course Materials</h1>
 
     <div class="container">
-        <!-- 第一栏：PPT -->
+        <!-- 左侧栏：Videos -->
+        <div class="column column-small">
+            <h2>Videos</h2>
+            <ul>
+                <li><a href="https://space.bilibili.com/3461563052723045/video?tid=0&pn=2&keyword=&order=pubdate" target="_blank">Bilibili link</a></li>
+                <li><a href="https://pan.baidu.com/s/1cmOoDH5I5dqfLw9noibZzQ?pwd=94c4" target="_blank">English videos (Baidu Disk)</a></li>
+                <li><a href="https://quizlet.com/search?query=igcse-computer-science&type=all" target="_blank">Quizlet</a></li>
+            </ul>
+        </div>
+
+        <!-- 中央主栏：PPT -->
         <div class="column">
             <h2>PPT</h2>
             <ul>
@@ -137,30 +107,11 @@
                 <li><a href="ppt/3.2.3 Manual input devices.pptx" target="_blank">3.2.3 Manual input devices</a></li>
                 <li><a href="ppt/3.2.4 Scanners and cameras.pptx" target="_blank">3.2.4 Scanners and cameras</a></li>
                 <li><a href="ppt/3.2.5 Printing technology.pptx" target="_blank">3.2.5 Printing technology</a></li>
-                <li><a href="ppt/3.2.6 Speakers screens and projectors.pptx" target="_blank">3.2.6 Speakers screens and projectors</a></li>
-                <li><a href="ppt/3.2.7 Sensors.pdf" target="_blank">3.2.7 Sensors</a></li>
-                <li><a href="ppt/3.3 Data Storage.pdf" target="_blank">3.3 Data Storage</a></li>
-                <li><a href="ppt/3.4 Network Hardware.pdf" target="_blank">3.4 Network Hardware</a></li>
-                <li><a href="ppt/4.1 Interrupts.pdf" target="_blank">4.1 Interrupts</a></li>
-                <li><a href="ppt/4.1 Types of software and Interru....pdf" target="_blank">4.1 Softwares&Interrupts</a></li>
-                <li><a href="ppt/4.1 Interrupts.pdf" target="_blank">4.1 Interrupts</a></li>
-                <li><a href="ppt/4.2 Types of language, translator....pdf" target="_blank">4.2 Programming languages&Translators</a></li>
-                <li><a href="ppt/Algorithm Design.pptx" target="_blank">7 Algorithm Design I</a></li>
             </ul>
         </div>
 
-        <!-- 第二栏：视频 -->
-        <div class="column">
-            <h2>Videos</h2>
-            <ul>
-                <li><a href="https://space.bilibili.com/3461563052723045/video?tid=0&pn=2&keyword=&order=pubdate" target="_blank">Bilibili link</a></li>
-                <li><a href="https://pan.baidu.com/s/1cmOoDH5I5dqfLw9noibZzQ?pwd=94c4" target="_blank">English videos(Baidu Disk link)</a></li>
-                <li><a href="https://quizlet.com/search?query=igcse-computer-science&type=all" target="_blank">Quizlet</a></li>
-            </ul>
-        </div>
-
-        <!-- 第三栏：Word文档 -->
-        <div class="column">
+        <!-- 右侧栏：Documents -->
+        <div class="column column-small">
             <h2>Documents</h2>
             <ul>
                 <li><a href="words/Vocabulary 1.docx" target="_blank">Vocabulary 1</a></li>
@@ -169,8 +120,6 @@
                 <li><a href="words/march_2020_11_ans.pdf" target="_blank">2020年3月真题12答案</a></li>
                 <li><a href="words/june_2020_11.pdf" target="_blank">2020年6月真题_11卷</a></li>
                 <li><a href="words/june_2020_11_ans.pdf" target="_blank">2020年6月真题11答案</a></li>
-                <li><a href="words/june_2020_12.pdf" target="_blank">2020年6月真题_12卷</a></li>
-                <li><a href="words/june_2020_12_ans.pdf" target="_blank">2020年6月真题12答案</a></li>
             </ul>
         </div>
     </div>
